@@ -78,4 +78,4 @@ def crop_image():
 
 if __name__ == '__main__':
     # classifier = cv2.CascadeClassifier('model/cascade.xml')
-    app.run('0.0.0.0', port= 8888, debug= True)
+    app.run('0.0.0.0', port= 9138, debug= True)
