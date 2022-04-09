@@ -65,7 +65,7 @@ def crop_image():
                 result = True
         
         # crop image
-        image = image[x1 : x2, y1 : y2]
+        image = image[y1 : y2, x1 : x2]
         cv2.imwrite('result/crop.jpg' ,image)
 
         # get url
@@ -78,4 +78,4 @@ def crop_image():
 
 if __name__ == '__main__':
     # classifier = cv2.CascadeClassifier('model/cascade.xml')
-    app.run('0.0.0.0', port= 9138, debug= True)
+    app.run('103.141.141.29', port= 9140, debug= True)
